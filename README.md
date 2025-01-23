@@ -1,3 +1,30 @@
+---
+
+## Como Criar um Arquivo `.md`
+
+Para criar um arquivo Markdown (.md), você pode usar qualquer editor de texto simples, como o **Notepad** (Windows) ou **TextEdit** (Mac), ou usar editores de código como **VSCode**. 
+
+### Passos para Criar um Arquivo `.md`:
+
+1. **Abra o seu editor de texto preferido** (por exemplo, VSCode).
+2. **Crie um novo arquivo** e escreva o conteúdo em Markdown.
+3. **Salve o arquivo com a extensão `.md`**, por exemplo, `README.md`.
+
+### Exemplo de conteúdo Markdown:
+
+```markdown
+# Título do Documento
+
+Aqui está o conteúdo do meu arquivo Markdown. Você pode usar Markdown para criar listas, links e muito mais.
+
+## Seção 1
+
+- Item 1
+- Item 2
+- Item 3
+
+[Visite meu site](https://www.example.com)
+
 
 ---
 
@@ -44,30 +71,29 @@ O diretório onde o código fonte da aplicação reside.
 
 - **`tsconfig.json`**: Arquivo de configuração do TypeScript que define como o código TypeScript será compilado para JavaScript.
 
----
 
-## Como Criar um Arquivo `.md`
 
-Para criar um arquivo Markdown (.md), você pode usar qualquer editor de texto simples, como o **Notepad** (Windows) ou **TextEdit** (Mac), ou usar editores de código como **VSCode**. 
 
-### Passos para Criar um Arquivo `.md`:
-
-1. **Abra o seu editor de texto preferido** (por exemplo, VSCode).
-2. **Crie um novo arquivo** e escreva o conteúdo em Markdown.
-3. **Salve o arquivo com a extensão `.md`**, por exemplo, `README.md`.
-
-### Exemplo de conteúdo Markdown:
-
-```markdown
-# Título do Documento
-
-Aqui está o conteúdo do meu arquivo Markdown. Você pode usar Markdown para criar listas, links e muito mais.
-
-## Seção 1
-
-- Item 1
-- Item 2
-- Item 3
-
-[Visite meu site](https://www.example.com)
+my-app/
+├── e2e/                    # Testes end-to-end (testes automatizados)
+├── node_modules/            # Dependências do Node.js (não deve ser versionado)
+├── src/
+│   ├── app/                 # Arquivos principais da aplicação (componentes, módulos, etc)
+│   │   ├── core/            # Serviços principais e lógica de negócio (auth, API, etc)
+│   │   ├── pages/           # Páginas da aplicação (Login, Home, etc)
+│   │   ├── components/      # Componentes reutilizáveis (header, footer, etc)
+│   │   ├── app-routing.module.ts # Arquivo de roteamento da aplicação
+│   │   ├── app.component.ts  # Componente raiz da aplicação
+│   │   └── app.module.ts     # Módulo principal da aplicação
+│   ├── assets/              # Imagens, fontes, arquivos estáticos
+│   ├── environments/        # Configurações para diferentes ambientes (dev, prod)
+│   ├── theme/               # Estilos globais, variáveis, etc
+│   ├── index.html           # Arquivo HTML principal
+│   ├── global.scss          # Arquivo de estilos globais
+│   └── main.ts              # Arquivo de inicialização da aplicação
+├── .editorconfig            # Configurações para editores de código
+├── .gitignore               # Arquivos e pastas a serem ignorados pelo Git
+├── angular.json             # Configurações do Angular CLI
+├── package.json             # Dependências e scripts NPM
+└── tsconfig.json            # Configurações do TypeScript
 
