@@ -1,4 +1,4 @@
----
+
 
 ## Como Criar um Arquivo `.md`
 
@@ -24,6 +24,7 @@ Aqui está o conteúdo do meu arquivo Markdown. Você pode usar Markdown para cr
 - Item 3
 
 [Visite meu site](https://www.example.com)
+
 
 
 ---
@@ -71,6 +72,7 @@ O diretório onde o código fonte da aplicação reside.
 
 - **`tsconfig.json`**: Arquivo de configuração do TypeScript que define como o código TypeScript será compilado para JavaScript.
 
+---
 
 
 
