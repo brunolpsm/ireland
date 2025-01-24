@@ -1,0 +1,14 @@
+<ion-header [translucent]="true" style="border: aqua solid 1px;">
+  <ion-toolbar style="border: red solid 1px;">
+    
+    <ion-buttons slot="start">
+      <ion-button *ngIf="showBackButton" (click)="goBack()">Voltar</ion-button>
+    </ion-buttons>
+    
+    <ion-title>{{ title }}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button fill="outline" size="small" (click)="console()">Console</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

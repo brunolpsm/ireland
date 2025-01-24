@@ -4,40 +4,39 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('./tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('./tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
         path: 'tab4',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('./tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
         path: 'tab5',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('./tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: 'tab1', // Redirecionando para a primeira aba
         pathMatch: 'full'
       }
     ]
   },
   {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
+    path: '**', // Captura qualquer rota errada
+    redirectTo: 'tabs/tab1', // Redireciona para 'tabs/tab1'
   }
 ];
 
